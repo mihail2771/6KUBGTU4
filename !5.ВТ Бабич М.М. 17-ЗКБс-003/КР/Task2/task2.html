@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Задание 2</title>
+ <link href="task2.css" rel="stylesheet">
+</head>
+<body>
+<div class="main flex-column flex-content-center">
+ <hr style="width:80%;margin: 20px 0">
+
+ <form method="POST" name="form" action="task2/add">
+  <div class="in-wrapper">
+   <label>Имя:</label>
+   <input type="text" name="name" id="name" required>
+  </div>
+
+  <div class="in-wrapper">
+    <label>Позиция в игре:</label>
+    <select name="position" id="position">
+     <option>Единичка</option>
+     <option>Двойка</option>
+     <option>Тройка</option>
+     <option>Четверка</option>
+     <option>Пятерка</option>
+     <option>Тренер</option>
+    </select>
+   </div>
+
+   <div class="in-wrapper">
+    <label>Состав:</label>
+    <div>
+        <p><input class="input" type="radio" name="staf" id="full-time" value="Основной" checked>Основной</p>
+        <p><input class="input" type="radio" name="staf" id="extramural" value="Запас">Запас</p>
+    </div>
+   </div>
+  <div class="in-wrapper">
+   <label>Команда:</label>
+   <input type="text" name="team" id="team" required>
+  </div>
+
+  <div class="in-wrapper">
+   <label>Номер игрока:</label>
+   <input type="text" name="number" id="number" required>
+  </div>
+
+  <button class="btn" type="submit">Отправить</button>
+ </form>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+html {
+    font-family: Roboto, sans-serif;
+    --primary-color: #2f80ed;
+    --secondary-color: #333333;
+    --bg-color: #ffffff;
+  }
+  
+  html[data-theme='dark'] {
+    --primary-color: #2f80ed;
+    --secondary-color: #ffffff;
+    --bg-color: #202020;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+  }
+  
+  * {
+    color: var(--secondary-color);
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.25em;
+  }
+  
+  h3 {
+    color: var(--primary-color);
+  }
+  
+  a {
+    color: var(--primary-color);
+  }
+  
+  .cv {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+
+  table {
+    border-collapse: separate; /* Способ отображения границы */ 
+    width: 100%; /* Ширина таблицы */ 
+    border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+   }
+   td {
+    padding: 5px; /* Поля вокруг текста */ 
+   }
